@@ -9,13 +9,39 @@
 
 
 using namespace std;
+int drawaxes;
 
 void init(){
     printf("Do your initialization here\n");
+    drawaxes = 1;
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f); // Set background color to black and opaque
+    
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+
+    gluPerspective(80, 1, 1, 1000.0);
     
 
 }
+
+void drawAxes()
+{
+	if(drawaxes==1)
+	{
+		glColor3f(1.0, 1.0, 1.0);
+		glBegin(GL_LINES);{
+			glVertex3f( 100,0,0);
+			glVertex3f(-100,0,0);
+
+			glVertex3f(0,-100,0);
+			glVertex3f(0, 100,0);
+
+			glVertex3f(0,0, 100);
+			glVertex3f(0,0,-100);
+		}glEnd();
+	}
+}
+
 
 // a openGL integer
 GLint counter = 0;
@@ -43,11 +69,19 @@ void drawSquare(double a){
 
 }
 
+double _rand(){
+    return (double)rand() / RAND_MAX;
+}
+
 void display(){
     printf("Display function called for %d times\n", counter);
     
     // glClearColor(0.5f, 0.5f, 0.5f, 1.0f); // Set background color to black and opaque
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+    gluLookAt(100,100,100,	0,0,0,	0,0,1);
+    drawAxes();
 
     glBegin(GL_LINES);{
         glColor3f(1.0f, 1.0f, 1.0f); // Green
@@ -59,14 +93,15 @@ void display(){
     }glEnd();
 
 
-    // for(int i = 0; i < 8; i++){
+    for(int i = 0; i < 8; i++){
         glPushMatrix();
-        glRotatef((counter)%360 , 0, 0, 1);
-        glTranslatef(0.5, 0.5, 0);
-        glColor3f(1.0f, 0.0f, 0.0f); // Red
-        drawSquare(0.1);
+        glRotatef(i * 90, 1, 0, 0);
+        glTranslatef(0, 0, 20);
+        glColor3f(1, 0, 0);
+        // glColor3f(_rand(), _rand(), _rand()); // Red
+        drawSquare(20);
         glPopMatrix();
-    // }
+    }
     
    
 
@@ -84,7 +119,7 @@ void idle(){
 
 int main(int argc,char** argv){
     glutInit(&argc,argv);
-    glutInitWindowSize(720, 450);   // Set the window's initial width & height
+    glutInitWindowSize(450, 450);   // Set the window's initial width & height
     glutInitWindowPosition(750, 250); // Position the window's initial top-left corner
     glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH);
     glutCreateWindow("Test");
