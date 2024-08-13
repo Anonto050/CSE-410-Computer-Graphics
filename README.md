@@ -5,7 +5,7 @@ This repository contains implementations of assignments from the Computer Graphi
 
 ## **Assignments**
 
-### **OpenGL**
+## **OpenGL**
 
 **`Offline 1`**
 
@@ -18,7 +18,7 @@ This repository contains implementations of assignments from the Computer Graphi
 - [A2 : Problem and Solution](/Online%201/A2)
 - [B2 : Problem and Solution](/Online%201/B2)
 
-### **Rasterization**
+## **Rasterization**
 
 **`Offline 2`**
 
@@ -28,7 +28,7 @@ This repository contains implementations of assignments from the Computer Graphi
 
 
 
-### **Ray Tracing**
+## **Ray Tracing**
 
 **`Offline 3`**
 
