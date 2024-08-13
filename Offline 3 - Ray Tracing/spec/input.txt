@@ -1,0 +1,128 @@
+4
+768
+
+8
+sphere 
+40.0 0.0 10.0 
+10.0 
+0.0 1.0 0.0
+0.4 0.2 0.2 0.2
+10
+
+sphere
+-30.0 60.0 20.0 
+20.0
+0.0 0.0 1.0
+0.2 0.2 0.4 0.2
+15
+
+sphere
+-15.0 15.0 45.0
+15.0
+1.0 1.0 0.0
+0.4 0.3 0.1 0.2
+5
+
+triangle
+50 30 0
+70 60 0
+50 45 50
+1.0 0.0 0.0
+0.4 0.2 0.1 0.3
+5
+
+triangle
+70 60 0
+30 60 0
+50 45 50
+0.0 1.0 0.0
+0.4 0.2 0.1 0.3
+5
+
+triangle
+30 60 0
+50 30 0
+50 45 50
+0.0 0.0 1.0
+0.4 0.2 0.1 0.3
+5
+
+general
+1 1 1 0 0 0 0 0 0 -100
+0 0 0 0 0 20
+0.0 1.0 0.0
+0.4 0.2 0.1 0.3
+10
+
+general
+0.0625 0.04 0.04 0 0 0 0 0 0 -36
+0 0 0 0 0 15
+1.0 0.0 0.0
+0.4 0.2 0.1 0.3
+15
+
+4
+70.0 70.0 70.0
+1.0 0.0 0.0
+-70 70 70
+0.0 0.0 1.0
+70 -70 70
+1 0 0.0
+-70 -70 70
+0 1.0 0
+
+1
+100 100 -200
+0 1.0 0.0
+0 0 1
+12
+
+Input explanation
+
+4 level of recursion
+768 pixels along both dimensions
+
+8 objects
+sphere
+40.0 0.0 10.0	- center
+10.0		- radius
+0.0 1.0 0.0	- color
+0.4 0.2 0.2 0.2	- ambient, diffuse, specular, recursive reflection coefficient
+5		- shininess
+
+triangle
+-20.0 -20.0 0.0	- x1, y1, z1
+20.0 -20.0 0.0	- x2, y2, z2
+0.0 0.0 20.0	- x3, y3, z3
+1.0 0.0 0.0	- color
+0.4 0.2 0.1 0.3	- ambient, diffuse, specular, recursive reflection coefficient
+5		- shininess
+
+general
+1 1 1 0 0 0 -20 -20 -20 200	- A B C D E F G H I J
+0 0 0 0 0 5	- cube reference point, length, width, height (0 indicates no clipping along this dimension)
+0.0 0.0 1.0	- color
+0.4 0.2 0.1 0.3	- ambient, diffuse, specular, recursive reflection coefficient
+3		- shininess
+
+
+4 point light sources
+70.0 70.0 70.0	- position of the 1st point light source
+1.0 0.0 0.0	- color of the 1st point light source
+-70 70 70	- position of the 2nd point light source
+0.0 0.0 1.0	- color of the 2nd point light source
+70 -70 70	- position of the 3rd point light source
+1 0 0.0		- color of the 3rd point light source
+-70 -70 70	- position of the 4th point light source
+0 1.0 0		- color of the 4th point light source
+
+1 spotlight source
+100 100 -200	- position of the 1st spotlight source
+0 1.0 0.0	- color of the 1st spotlight source
+0 0.0 1		- direction of the 1st spotlight source
+12		- cutoff angle (in degree) of the 1st spotlight source
+
+There will be a floor along the XY-plane
+FloorWidth can be 1000 (from origin 500 across each side)
+Each Tile Width can be 20
+Color should be alternating
