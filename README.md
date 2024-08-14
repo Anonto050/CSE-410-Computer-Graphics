@@ -9,14 +9,32 @@ This repository contains implementations of assignments from the Computer Graphi
 
 **`Offline 1`**
 
-- [Problem Statement](/Offline%201/CSE%20314%20Jan%202023%20-%20Shell%20Scripting%20Assignment.pdf)
-- [Solution](/Offline%201)
+- [Problem Statement](/Offline%201%20-%20OpenGL/Resources/CSE410_opengl%20(3).pdf)
+- [Solution](/Offline%201%20-%20OpenGL)
+- [Resources](/Offline%201%20-%20OpenGL/Resources)
+
+<div align="center">
+  <h3>Magic Cube</h3>
+  <img src="https://github.com/Anonto050/CSE-410-Computer-Graphics/blob/main/Offline%201%20-%20OpenGL/Resources/magic_cube1.png" alt="Magic Cube 1" width="400" style="margin-right: 20px;"/>
+  <img src="https://github.com/Anonto050/CSE-410-Computer-Graphics/blob/main/Offline%201%20-%20OpenGL/Resources/magic_cube2.png" alt="Magic Cube 2" width="400" style="margin-left: 20px;"/>
+</div>
+
+<div align="center" style="margin-top: 20px;">
+  <h3>Rolling Ball</h3>
+  <img src="https://github.com/Anonto050/CSE-410-Computer-Graphics/blob/main/Offline%201%20-%20OpenGL/Resources/rolling_ball.png" alt="Rolling Ball" width="400"/>
+</div>
 
 **`Online`**
 
-- [Resources](/Online%201/Resources)
-- [A2 : Problem and Solution](/Online%201/A2)
-- [B2 : Problem and Solution](/Online%201/B2)
+- [A2 : Solution](https://github.com/Anonto050/CSE-410-Computer-Graphics/blob/main/Online%20-%20OpenGL/1905050_onlineA2.cpp)
+- [A1 and B1 : Solution](https://github.com/Anonto050/CSE-410-Computer-Graphics/blob/main/Online%20-%20OpenGL/onlineA1_B1.cpp)
+
+ <div align="center">
+  <h3>A2 : Merry Go Round</h3>
+  <img src="https://github.com/Anonto050/CSE-410-Computer-Graphics/blob/main/Online%20-%20OpenGL/a2.png" alt="A2 : Merry Go Round" width="400" style="margin-right: 20px;"/>
+  <h3>A1 and B1 : Wave and Circles</h3>
+  <img src="https://github.com/Anonto050/CSE-410-Computer-Graphics/blob/main/Online%20-%20OpenGL/a1.png" alt="A1 and B1 : Wave and Circles" width="400"/>
+</div>
 
 ## **Rasterization**
 
