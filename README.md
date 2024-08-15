@@ -40,20 +40,23 @@ This repository contains implementations of assignments from the Computer Graphi
 
 **`Offline 2`**
 
-- [Problem Statement](/Offline%202/Offline-2-spec.pdf)
-- [Solution](/Offline%202/Offline-2-files)
-- [Resources](/Offline%202/Resources)
+- [Problem Statement](/Offline%202%20-%20Rasterization/Offline%202%20Specifications.pdf)
+- [Solution](/Offline%202%20-%20Rasterization/Offline%202)
 
-
+<div align="center" style="margin-top: 20px;">
+  <img src="https://github.com/Anonto050/CSE-410-Computer-Graphics/blob/main/Offline%202%20-%20Rasterization/IOs/1/out.bmp" alt="Rasterization" width="400"/>
+</div>
 
 ## **Ray Tracing**
 
 **`Offline 3`**
 
-- [Problem Statement](/Offline%204/IPC%20Offline.pdf)
-- [Solution](/Offline%204)
-- [Resources](/Offline%204/Materials)
+- [Problem Statement](/Offline%203%20-%20Ray%20Tracing/spec)
+- [Solution](/Offline%203%20-%20Ray%20Tracing/code)
 
+<div align="center" style="margin-top: 20px;">
+  <img src="https://github.com/Anonto050/CSE-410-Computer-Graphics/blob/main/Offline%203%20-%20Ray%20Tracing/code/output3.bmp" alt="Ray tracing" width="400"/>
+</div>
 
 
 ---
